@@ -13,11 +13,13 @@ body {
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 	border: 1px solid red;
+
 }
 
 h1,
@@ -49,12 +51,13 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
+	height: auto;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 header h1 {
@@ -73,13 +76,16 @@ header nav {
 header nav ul {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em;
 	padding: 0 10px;
-	display: inline;
+	display: flex;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -94,6 +100,7 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 .main-image {
@@ -123,9 +130,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
 	height: auto;
-	float: left;
 	border-top: 1px solid #eee;
 }
 
@@ -173,6 +178,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Galada', cursive;
@@ -180,3 +186,18 @@ footer span {
 	color: #77a466;
 	font-size: 14px;
 }
+
+@media all and (min-width: 768px) {
+	/* Tablet styles */
+
+
+
+
+}
+
+@media all and (min-width: 1200px) {
+	/* Desktop styles */
+
+
+}
+
